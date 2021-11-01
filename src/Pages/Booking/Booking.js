@@ -22,10 +22,10 @@ const Booking = () => {
         data.name = `${detailService.name}`;
         data.price = `${detailService.price}`
 
-        data.img=`${detailService.img}`
-        
+        data.img = `${detailService.img}`
 
-        axios.post('http://localhost:5000/myOrder', data)
+
+        axios.post('https://rocky-atoll-91237.herokuapp.com/myOrder', data)
 
             .then(res => {
                 if (res.data.insertedId) {

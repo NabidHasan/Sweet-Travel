@@ -8,18 +8,21 @@ const MyOrder = () => {
     const { user } = useAuth();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/myOrder/${user.email}`)
+        fetch(`https://rocky-atoll-91237.herokuapp.com/myOrder/${user.email}`)
             .then(res => res.json())
             .then(data => setOrder(data))
     }, [])
 
     const handleDelete = id => {
-        const url = `http://localhost:5000/myOrder/${id}`;
+        const url = `https://rocky-atoll-91237.herokuapp.com/myOrder/${id}`;
         fetch(url, {
             method: "DELETE",
         })
+
             .then(res => res.json())
             .then(data => {
+                alert('Do you want to delete it , Permanently??')
+
                 console.log(data)
                 const remaining = orders.filter(order => order._id !== id);
                 setOrder(remaining);

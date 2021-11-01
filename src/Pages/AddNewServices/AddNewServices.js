@@ -7,7 +7,7 @@ const AddNewServices = () => {
     const onSubmit = data => {
         console.log(data);
 
-        axios.post('http://localhost:5000/services', data)
+        axios.post('https://rocky-atoll-91237.herokuapp.com/services', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Added Successfully!!')
@@ -24,7 +24,7 @@ const AddNewServices = () => {
                 <textarea {...register("address")} placeholder='Address' />
                 <input type="number" {...register("price")} placeholder='Price' />
                 <input {...register("img")} placeholder='Img Url' />
-                <input  type="submit" />
+                <input type="submit" />
             </form>
         </div>
     );

@@ -1,4 +1,4 @@
-# NH ONLINE COURSES
+# SWEET TRAVEL
 
 Firebase Link [Sweet Travel](https://sweet-travel-d2473.web.app/).
 

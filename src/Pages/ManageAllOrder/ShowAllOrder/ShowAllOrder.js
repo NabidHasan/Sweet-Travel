@@ -9,18 +9,20 @@ const ShowAllOrder = (props) => {
     const { user } = useAuth();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/myOrder/${user.email}`)
+        fetch(`https://rocky-atoll-91237.herokuapp.com/myOrder/${user.email}`)
             .then(res => res.json())
             .then(data => setManageOrder(data))
     }, [])
 
     const handleDelete = id => {
-        const url = `http://localhost:5000/myOrder/${id}`;
+        const url = `https://rocky-atoll-91237.herokuapp.com/myOrder/${id}`;
         fetch(url, {
             method: "DELETE",
         })
             .then(res => res.json())
             .then(data => {
+                alert('Do you want to delete it , Permanently??')
+
                 console.log(data)
                 const remaining = manageOrder.filter(manOrder => manOrder._id !== id);
                 setManageOrder(remaining);
