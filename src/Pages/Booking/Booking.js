@@ -12,15 +12,17 @@ const Booking = () => {
     const [detailService, setDetailService] = useState({});
     let { serviceId } = useParams();
 
-    const name = detailService?.name;
-    const price = detailService?.price;
+
 
     const { user } = useAuth();
 
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        console.log(detailService);
 
+        data.name = `${detailService.name}`;
+        data.price = `${detailService.price}`
+
+        console.log(data.name)
 
         axios.post('http://localhost:5000/myOrder', data)
 
@@ -54,11 +56,8 @@ const Booking = () => {
                     <form onSubmit={handleSubmit(onSubmit)}>
 
                         <h2>Add Your Information</h2>
-                        <input {...register('name')} defaultValue={user.displayName} />
+                        <input {...register('Username')} defaultValue={user.displayName} />
                         <input {...register('email')} defaultValue={user.email} />
-                        <input {...register('packageName')} defaultValue={name} />
-                        <input  {...register('price')} defaultValue={price} />
-
                         <input {...register("address")} placeholder='Address' />
                         <input {...register("country")} placeholder='Country' />
                         <input {...register("city")} placeholder='City' />

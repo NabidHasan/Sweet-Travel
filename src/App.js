@@ -10,6 +10,7 @@ import Header from './Pages/Shared/Header/Header';
 import AuthProvider from './Contexts/AuthProvider';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import AddNewServices from './Pages/AddNewServices/AddNewServices';
+import MyOrder from './Pages/MyOrder/MyOrder';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
               <AddNewServices></AddNewServices>
             </PrivateRoute>
             <PrivateRoute path='/myOrder'>
+              <MyOrder></MyOrder>
             </PrivateRoute>
             <PrivateRoute path='/manageOrder'>
               <AddNewServices></AddNewServices>
