@@ -2,9 +2,11 @@
     {
         "_id": "615b62501dc63fc26173dd28",
         "index": 0,
-        "name": "Cardiology",
+        "name": "Travel Agency",
         "fee": "$1,33.78",
-        "picture": "https://image.freepik.com/free-photo/elderly-woman-doctor-appointment-modern-private-clinic-while-she-sitts-hospital-bed-physician-is-listening-her-heart-beat-health-care-medicine-treatment-specialist-consultation_482257-4267.jpg",
+        "picture": "https://www.glionconsulting.com/wp-content/uploads/2018/11/travel-agency-crm-1.jpg",
+        "email": "aprilchang@bleeko.com",
+        "phone": "+1 (879) 553-2588",
         "about": " Cardiology (Heart) Care for diseases, conditions of the heart and blood circulatory system.\r\n"
     },
     {
@@ -13,8 +15,10 @@
         "guid": "4ea02311-9c14-4c66-b7de-311e5e17e46a",
         "isActive": false,
         "fee": "$1,449.78",
-        "picture": "https://image.freepik.com/free-photo/world-diabetes-day-medical-equipment-wooden-floor_1150-26692.jpg",
+        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvtuby9sBHf-EN-3fkeUB-5pvxiDwVCO6X_A&usqp=CAU",
         "name": "Diabetes",
+        "email": "merlecrosby@twiist.com",
+        "phone": "+1 (893) 586-2490",
         "address": "526 Clove Road, Corriganville, Tennessee, 3261",
         "about": "Diabetes (Endocrinology)Care, education and support for those with metabolism disorders..\r\n"
     },
@@ -26,6 +30,8 @@
         "fee": "$1,840.40",
         "picture": "https://image.freepik.com/free-photo/health-assistant-taking-care-female-patient_23-2148981270.jpg",
         "name": "Mental Care",
+        "email": "gilmoresaunders@infotrips.com",
+        "phone": "+1 (956) 514-3108",
         "address": "421 Brooklyn Avenue, Grazierville, Arkansas, 8104",
         "about": "An agreement to meet with someone at a particular time. : the act the act of appointing someone. \r\n"
     },
@@ -35,6 +41,8 @@
         "guid": "d8c303f1-ea40-40ae-9666-f89fe44f2ade",
         "isActive": false,
         "fee": "$1,165.98",
+        "email": "beasleylangley@flotonic.com",
+        "phone": "+1 (934) 417-3837",
         "picture": "https://image.freepik.com/free-photo/wondered-woman-with-shocked-expression-uses-mobile-phone-during-beauty-treatment_273609-37119.jpg",
         "name": "Massage Therapy",
         "address": "802 Decatur Street, Kansas, Colorado, 4504",
@@ -47,6 +55,8 @@
         "isActive": true,
         "fee": "$2,149.93",
         "picture": "https://image.freepik.com/free-photo/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture_409827-254.jpg",
+        "email": "maimarshall@springbee.com",
+        "phone": "+1 (828) 572-2051",
         "name": "Mobile Care",
         "address": "664 Winthrop Street, Caron, Northern Mariana Islands, 5447",
         "about": " A large commercial vehicle with two exam rooms, a laboratory and to Mayo Clinic providers.\r\n"
@@ -58,6 +68,8 @@
         "isActive": true,
         "fee": "$3,155.67",
         "picture": "https://image.freepik.com/free-vector/ambulance-paramedics-crew-rushing-injured-patient-hospital-emergency-department-resuscitation-area-flat-composition_1284-32324.jpg",
+        "email": "ashleynicholson@xelegyl.com",
+        "phone": "+1 (901) 561-3985",
         "name": "Urgent Care",
         "address": "109 Garden Place, Brazos, South Dakota, 3168",
         "about": "Quick, convenient care for non-emergency illnesses and injuries for the entire for the entire family.\r\n"

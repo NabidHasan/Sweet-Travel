@@ -8,7 +8,7 @@ const Header = () => {
     const { user, logOut } = useAuth();
     return (
         <div>
-            <Navbar sticky='top' bg='dark' variant="dark" collapseOnSelect expand="lg">
+            <Navbar sticky='top' collapseOnSelect expand="lg">
                 <Container>
 
 
@@ -19,15 +19,16 @@ const Header = () => {
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
                         <Nav.Link as={Link} to='/home'>Home</Nav.Link>
-                        <Nav.Link as={Link} to='/about'>Appointments</Nav.Link>
+                        <Nav.Link as={Link} to='/addNewServices'>Add Services</Nav.Link>
                         <Nav.Link as={Link} to='/reviews'>Reviews</Nav.Link>
-                        {user?.email ?
-                            <Button onClick={logOut} variant='primary'>LogOut</Button> :
 
-                            <Nav.Link as={Link} to='/login'>Login</Nav.Link>}
-                        <Navbar.Text style={{ color: "blue" }}>
-                            Signed in as: <a href="#login" style={{ color: "blue" }}>{user?.displayName}</a>
+                        <Navbar.Text >
+                            Signed in as: <a href="#login" >{user?.displayName} </a>
                         </Navbar.Text>
+                        {user?.email ?
+                            <Button onClick={logOut} variant='primary'> LogOut</Button> :
+
+                            <Nav.Link as={Link} to='/login'> Login</Nav.Link>}
                     </Navbar.Collapse>
 
 

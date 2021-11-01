@@ -1,0 +1,48 @@
+.items{
+    display: flex;
+margin-bottom: 30px;    
+}
+
+.head-line{
+    margin-bottom: 30px;
+}
+.items p{
+    color: gray;
+}
+.worldwide-branches img{
+    height: 600px;
+    width: 100%;
+}
+.btn-dsn{
+    border-radius: 10px;
+ background-color: rgb(132, 65, 177);
+ margin-bottom: 5px;
+}
+
+.btn-dsn-part2{
+    border-radius: 10px;
+    background-color: white;
+    color: yellowgreen;
+    margin-bottom: 5px;
+}
+
+.items img{
+width: 100%;
+
+}
+
+.second-part{
+    background-color: rgb(155, 209, 155);
+}
+
+.first-part{
+    background-color: rgb(103, 177, 206);
+}
+
+.progress{
+    margin-top: 50px;
+}
+.accortion-items{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}

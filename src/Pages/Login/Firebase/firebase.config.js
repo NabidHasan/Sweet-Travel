@@ -1,4 +1,5 @@
 const firebaseConfig = {
+    //Config
     apiKey: "AIzaSyCj5i1ZqD-z-LrS5j1pCbB7wLghYKiGLjU",
     authDomain: "sweet-travel-d2473.firebaseapp.com",
     projectId: "sweet-travel-d2473",
