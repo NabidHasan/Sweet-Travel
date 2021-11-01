@@ -9,22 +9,22 @@ import { useForm } from "react-hook-form";
 const Booking = () => {
 
     const [services, setServices] = useService();
-    const [detailService, setDetailService] = useState();
+    const [detailService, setDetailService] = useState({});
     let { serviceId } = useParams();
 
-
+    const name = detailService?.name;
+    const price = detailService?.price;
 
     const { user } = useAuth();
 
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
+        console.log(detailService);
 
-        console.log(data);
 
         axios.post('http://localhost:5000/myOrder', data)
-            .then(res => {
 
-                console.log(res)
+            .then(res => {
                 if (res.data.insertedId) {
                     alert('Added Successfully!!')
                 }
@@ -34,7 +34,8 @@ const Booking = () => {
 
     useEffect(() => {
         const findService = services.find(service => service._id === serviceId);
-        setDetailService(findService)
+        setDetailService(findService);
+        console.log(detailService);
     }, [services])
     return (
         <div>
@@ -55,8 +56,8 @@ const Booking = () => {
                         <h2>Add Your Information</h2>
                         <input {...register('name')} defaultValue={user.displayName} />
                         <input {...register('email')} defaultValue={user.email} />
-                        <input {...register('packageName')} defaultValue={detailService?.name} />
-                        <input  {...register('price')} defaultValue={detailService?.price} />
+                        <input {...register('packageName')} defaultValue={name} />
+                        <input  {...register('price')} defaultValue={price} />
 
                         <input {...register("address")} placeholder='Address' />
                         <input {...register("country")} placeholder='Country' />
