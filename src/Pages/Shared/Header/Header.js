@@ -21,7 +21,7 @@ const Header = () => {
                         <Nav.Link as={Link} to='/home'>Home</Nav.Link>
                         <Nav.Link as={Link} to='/addNewServices'>Add Services</Nav.Link>
                         <Nav.Link as={Link} to='/myOrder'>My Order</Nav.Link>
-                        <Nav.Link as={Link} to='/manageOrder'>Manage Order</Nav.Link>
+                        <Nav.Link as={Link} to='/manageOrder'>Manage Order</Nav.Link> 
 
                         <Navbar.Text >
                             Signed in as: <a href="#login" >{user?.displayName} </a>

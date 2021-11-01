@@ -1,9 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import ShowAllOrder from './ShowAllOrder/ShowAllOrder';
 
 const ManageAllOrder = () => {
-    return (
-        <div>
 
+    const [allOrder, setAllOrder] = useState([]);
+
+    useEffect(() => {
+        fetch('http://localhost:5000/myOrder')
+            .then(res => res.json())
+            .then(data => setAllOrder(data))
+    }, [])
+    return (
+        <div className="container">
+            <h2>Total Order : {allOrder?.length}</h2>
+
+            <div className='row'>
+                {
+                    allOrder.map(order => <ShowAllOrder
+                        key={order._id}
+                        order={order}
+                    ></ShowAllOrder>)
+                }
+            </div>
         </div>
     );
 };

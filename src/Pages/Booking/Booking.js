@@ -22,7 +22,8 @@ const Booking = () => {
         data.name = `${detailService.name}`;
         data.price = `${detailService.price}`
 
-        console.log(data.name)
+        data.img=`${detailService.img}`
+        
 
         axios.post('http://localhost:5000/myOrder', data)
 

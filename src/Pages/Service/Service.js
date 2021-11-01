@@ -11,7 +11,7 @@ const Service = (props) => {
             <div className="card">
                 <img src={img} className="card-img-top" alt="..." />
                 <div className="card-body">
-                    <h3 className="card-title">{name}</h3>
+                    <h5 className="card-title">{name}</h5>
 
                 </div>
                 <Link className='service-btn py-3' to={`/booking/${_id}`}>

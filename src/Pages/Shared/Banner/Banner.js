@@ -17,8 +17,8 @@ const Banner = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption style={{ color: 'black' }}>
-                        <h3>Welcome to 24hr Medical Center</h3>
-                        <p>We provide worldclass services and our reviews are always 5 stars!! plz cheak our services.</p>
+                        <p style={{ color: "white" }}>Welcome to Sweet travel</p>
+                        <p style={{ color: "white" }}>We provide worldclass services and our reviews are always 5 stars!! p.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -29,8 +29,8 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>All lab elements are here!!</h3>
-                        <p>Our Doctors are always active for you.</p>
+                        <h3>All Exparts elements are here!!</h3>
+                        <p>Our Instructors are always active for you.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>

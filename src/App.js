@@ -11,6 +11,7 @@ import AuthProvider from './Contexts/AuthProvider';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import AddNewServices from './Pages/AddNewServices/AddNewServices';
 import MyOrder from './Pages/MyOrder/MyOrder';
+import ManageAllOrder from './Pages/ManageAllOrder/ManageAllOrder';
 
 function App() {
   return (
@@ -42,7 +43,7 @@ function App() {
               <MyOrder></MyOrder>
             </PrivateRoute>
             <PrivateRoute path='/manageOrder'>
-              <AddNewServices></AddNewServices>
+              <ManageAllOrder></ManageAllOrder>
             </PrivateRoute>
 
             <PrivateRoute path='/booking/:serviceId'>
